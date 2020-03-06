@@ -1,0 +1,118 @@
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    height: 1.8%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 27.4%;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+    margin: 43px 15px;
+}
+.header a{
+    position: relative;
+    display: block;
+    text-decoration: none; 
+    color: #555;   
+}
+.header a:hover{
+    text-decoration: none;
+    color: #5363db;
+
+}
+/* .header nav li a:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;   
+    background: red;
+    height: 2px;
+    width: 20px;
+}
+.header nav li:hover a:after{
+    content: '';
+    background: transparent;  
+} */
+.menu{
+    font-size: 14px;
+}
+.logo{
+    margin:16px 150px;
+    font-family: champagnelimousines;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5363db;
+}
+
+.block2{
+    display: flex;
+    background-color: #5363db;
+    background-image: url(images/img-visual.jpg);
+}
+.form{
+    padding: 41px 40px 35px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+form h2{
+    font-size: 25.64px;
+    color: #5363db;
+    margin-bottom: 13px;
+}
+.form-element input,
+select{
+    width: 230px;
+    height: 50px;
+    /* padding: 18px auto 20px 10px; */
+    padding-left: 10px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #888;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 1.2;
+  text-align: left;
+    margin: 17px 0;
+
+}
+.form-btn button{
+    background-color: #5b6ceb;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    padding: 17px 64px;
+    border-radius: 8px;
+    box-shadow: 2.121px 2.121px 5px 0px rgba(0, 0, 0, 0.15);
+    width: 170px;
+  height: 50px;
+    margin: 14px 0 0 65px; 
+}
+
+
+@media (min-width: 320px) and (max-width: 768px){
+    .header{
+        flex-direction: column;
+        margin:0 auto;
+    }
+    .menu{
+        margin: 0 auto;
+    }
+    .logo{
+        order: -1;
+        margin: 0 auto;
+    }
+}
+
+
+  
