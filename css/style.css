@@ -162,10 +162,17 @@ select {
   flex-wrap: wrap;
 }
 .block3-box > div {
-  width: 50%;
+  width: calc(50% - 30px);
+  max-height: 300px;
 }
 .yoga-class {
   display: flex;
+  margin: 15px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.yoga-class:hover {
+  transform: scale(1.2);
+  padding: 15px;
 }
 .yoga-class > div {
   width: 50%;
@@ -174,7 +181,7 @@ select {
   margin: auto 0;
 }
 .content-yoga-class {
-  padding: 0 15px;
+  padding: 30px 15px;
   margin: auto 0;
 }
 
@@ -189,6 +196,7 @@ select {
   font-family: "Open Sans";
   color: rgb(85, 85, 85);
   line-height: 1.571;
+  margin: 15px 0;
 }
 .trainer {
   font-size: 14px;
@@ -197,10 +205,20 @@ select {
   line-height: 1.571;
 }
 
-block @media (min-width: 320px) and (max-width: 768px) {
+/* Block4 */
+.block4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2.2% 0;
+}
+.block4 > div {
+  width: 25%;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   .header {
     flex-direction: column;
-    margin: 0px auto;
+    margin: 0 auto;
   }
   .menu {
     margin: 0 auto;
@@ -224,5 +242,11 @@ block @media (min-width: 320px) and (max-width: 768px) {
   }
   .block2-box2 {
     align-items: center;
+  }
+  .block3-box {
+    flex-direction: column;
+  }
+  .block3-box > div {
+    width: 100%;
   }
 }
