@@ -325,10 +325,11 @@ select {
 }
 .f-block {
   display: flex;
-  padding: 10% 0;
+  padding: 5% 0;
 }
 .f-block > div {
   width: 50%;
+  padding: 15px;
 }
 .f-block h2 {
   font-size: 18px;
@@ -355,16 +356,33 @@ select {
   width: 50%;
   display: flex;
 }
+.contact div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact p,
 a {
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(255, 255, 255);
   line-height: 1.571;
-  float: left;
 }
 .contact img {
-  margin: 15px;
+  margin: 15px 15px 15px 0;
+}
+.f2 {
+  background-color: rgb(83, 99, 216);
+}
+.f2-block {
+  padding: 2% 0;
+}
+.f2 p {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: rgb(183, 191, 252);
+  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -419,5 +437,29 @@ a {
   .block6-container {
     flex-direction: column;
     align-items: center;
+  }
+  .f-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .f-block > div {
+    width: 90%;
+  }
+  .f-block h2,
+  p {
+    text-align: center;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+  .box-contacts {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .contact {
+    width: 90%;
+    justify-content: center;
   }
 }
